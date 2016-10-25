@@ -1,1 +1,0 @@
-# kinolab.cz

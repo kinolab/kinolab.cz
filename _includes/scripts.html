@@ -1,0 +1,46 @@
+<script src="https://cdn.jsdelivr.net/g/jquery@3.1.1,waypoints@4.0.1"></script>
+
+<script>
+
+
+
+
+$( document ).ready(function() {
+    // console.log( "ready!" );
+
+	var pointclaim = new Waypoint({
+	  element: document.getElementById('program'),
+	  handler: function(direction) {
+		    // console.log('Basic waypoint triggered');
+	    $('body').removeClass('color2 color3');
+	    $('body').addClass('color1');
+	  },
+	});
+
+	// var pointcontent = new Waypoint({
+	//   element: document.getElementById('contentaware'),
+	//   handler: function(direction) {
+	// 	    // console.log('Basic waypoint triggered');
+	//     $('body').removeClass('color1 color3');
+	//     $('body').addClass('color2');
+	//   },
+	//   offset: 'bottom-in-view',
+	// });
+
+	var aboutcontent = new Waypoint({
+	  element: document.getElementById('about'),
+	  handler: function(direction) {
+		    // console.log('Basic waypoint triggered');
+	    $('body').removeClass('color2 color1');
+	    $('body').addClass('color3');
+	  },
+	  offset: 'bottom-in-view',
+	});
+
+
+
+});
+
+
+
+</script>
