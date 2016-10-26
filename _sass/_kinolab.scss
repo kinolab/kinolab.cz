@@ -150,7 +150,9 @@ header {
 			h4 { margin-top: 0;}
   	}
 }
-
+#textcontent {
+	@extend .clearfix;
+}
 .column { width: 50%; float: left; }
 .column:nth-child(odd) {
 	padding-right: 3%;
@@ -160,4 +162,37 @@ header {
 	padding-left: 3%;
 }
 
+ #mc_embed_signup{ clear:left; width: 100%; margin: 100px 0;}
 
+
+#mc_embed_signup_scroll label { width: 100%;
+display: block;
+text-align: center;}
+
+#mce-EMAIL {
+	position: relative;
+width: 30%;
+margin: 20px 35%;
+border: 1px solid $black;
+color: $black;
+background-color: white;
+border-radius: 2px;
+padding: 5px;
+}
+
+#mc-embedded-subscribe {
+	transition: all .5s;
+	border: 1px solid $black;
+	background-color: white;
+	color: $black;
+	border-radius: 2px;
+width: 20%;
+padding: 10px;
+margin: 0 40%;
+}
+#mc-embedded-subscribe:hover {
+		border: 1px solid $black;
+	background-color: $back;
+	color: $black;
+
+}
