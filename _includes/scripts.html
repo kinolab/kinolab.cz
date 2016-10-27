@@ -6,7 +6,6 @@
 
 
 $( document ).ready(function() {
-    // console.log( "ready!" );
 
 	var pointclaim = new Waypoint({
 	  element: document.getElementById('program'),
@@ -16,17 +15,6 @@ $( document ).ready(function() {
 	    $('body').addClass('color1');
 	  },
 	});
-
-	// var pointcontent = new Waypoint({
-	//   element: document.getElementById('contentaware'),
-	//   handler: function(direction) {
-	// 	    // console.log('Basic waypoint triggered');
-	//     $('body').removeClass('color1 color3');
-	//     $('body').addClass('color2');
-	//   },
-	//   offset: 'bottom-in-view',
-	// });
-
 	var aboutcontent = new Waypoint({
 	  element: document.getElementById('about'),
 	  handler: function(direction) {
@@ -37,6 +25,11 @@ $( document ).ready(function() {
 	  offset: 'bottom-in-view',
 	});
 
+	$('.audio').click(function () {
+	    $('html, body').animate({
+        scrollTop: $("#mailchimp").offset().top
+    }, 800);
+	});
 
 
 });
